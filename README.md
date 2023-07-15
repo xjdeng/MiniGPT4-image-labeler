@@ -15,3 +15,6 @@ Occasionally, errors might prevent either the streaming or non-streaming server 
 
 ## Running the Client
 
+Open the [client notebook](https://github.com/xjdeng/MiniGPT4-image-labeler/blob/main/client.ipynb) and click the appropriate button to launch it on Google Colab.  Make sure you fill in the fields as instructed.  You'll also need to upload the images you want to label to the Google Account that you're running the client from (it can be a different Google Account than the one the server is running on.) Make sure you've copied the non-streaming server's URL from the server notebook and pasted it into the correct field.  Make sure you've also entered the path where you've uploaded your images in your Google Drive.  If you check the "resume" box, the script will skip the files that already have labels, saving you time though you may want to uncheck this if you've decided to change the prompt.
+
+Once you're done labeling the images, you'll be able to fine tune a Stable Diffusion model (or LoRA) using, say, Kohya-ss or Everydream.
